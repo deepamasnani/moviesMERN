@@ -9,11 +9,11 @@
 	},
 	"scripts": {
 		"start": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
-		"backend": "nodemon server/index.js",
+		"backend": "node index.js",
 		"frontend": "npm run start --prefix client",
 		"dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
 	},
-	"author": "Kristijan Maodus",
+	"author": "Deepam",
 	"license": "MIT",
 	"dependencies": {
 		"bcrypt": "3.0.8",

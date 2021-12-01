@@ -13,7 +13,7 @@ function MovieInfo(props) {
       <Descriptions.Item label="Runtime">{movie.runtime} minutes</Descriptions.Item>
       <Descriptions.Item label="Vote count">{movie.vote_count}</Descriptions.Item>
       {/* <Descriptions.Item label="Status">{movie.status}</Descriptions.Item> */}
-      <Descriptions.Item label="Homepage">{movie.homepage}</Descriptions.Item>
+      <Descriptions.Item label="Homepage"><a href={movie.homepage}>{movie.homepage}</a></Descriptions.Item>
       <Descriptions.Item label="Popularity">{movie.popularity}</Descriptions.Item>
       <Descriptions.Item label="Average vote" span={2}>{movie.vote_average}</Descriptions.Item>
     </Descriptions>

@@ -1,7 +1,7 @@
 export const USER_SERVER = '/api/users';
 
 export const API_URL = 'https://api.themoviedb.org/3/';
-export const API_KEY = 'b4a549abb798b19dbb7e63335d135053';
+export const API_KEY = 'a5feb89ed938a17b26eb88005f2d90f3';
 
 
 export const IMAGE_BASE_URL = 'http://image.tmdb.org/t/p/';

@@ -3,6 +3,8 @@ import LeftMenu from './Sections/LeftMenu';
 import RightMenu from './Sections/RightMenu';
 import { Drawer, Button, Icon } from 'antd';
 import './Sections/Navbar.css';
+import Search from './Sections/Search';
+// import Search from './Sections/Search';
 
 function NavBar() {
   const [visible, setVisible] = useState(false)
@@ -18,12 +20,13 @@ function NavBar() {
   return (
     <nav className="menu" style={{ position: 'fixed', zIndex: 5, width: '100%' }}>
       <div className="menu__logo">
-        <a style={{ color: '#BD0A28', fontWeight: 'bolder' }} href="/">TBP Project</a>
+        <a style={{ color: '#BD0A28', fontWeight: 'bolder' }} href="/">The Box Office App</a>
       </div>
       <div className="menu__container">
         <div className="menu_left">
           <LeftMenu mode="horizontal" />
         </div>
+        <Search />
         <div className="menu_rigth">
           <RightMenu mode="horizontal" />
         </div>

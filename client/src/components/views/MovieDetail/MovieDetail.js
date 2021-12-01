@@ -111,8 +111,9 @@ function MovieDetailPage(props) {
                     <Row gutter={[16, 16]}>
                         {
                             !LoadingForCasts ? Casts.map((cast) => (
+                            
                                 cast.profile_path &&
-                                <GridCards actor image={cast.profile_path} characterName={cast.characterName} />
+                                <GridCards actor image={cast.profile_path} characterName={cast.character} />
                             )) :
                                 <div>loading...</div>
                         }
@@ -120,9 +121,6 @@ function MovieDetailPage(props) {
                 }
                 <br />
 
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <LikeDislikes movie movieId={movieId} userId={localStorage.getItem('userId')} />
-                </div>
 
                 {/* Comments */}
                 <Comments movieTitle={Movie.original_title} CommentLists={CommentLists} postId={movieId} refreshFunction={updateComment} />
